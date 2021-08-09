@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>HTML</title>
+
+    <!-- HTML -->
+
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        height: 100%;
+
+    }
+
+    header {
+        color: #f6f6f8;
+        background-color: #4C6796;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+    }
+
+    header .logo {
+        color: #dodcf2;
+        margin: 20px;
+        font-size: 20px;
+        font-weight: 500px;
+    }
+
+    header .links ul {
+        display: flex;
+        list-style: none;
+        margin: 20px;
+    }
+
+    header .links ul li {
+        margin: 0 10px;
+    }
+
+    header .links ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    main .hero-image {
+        position: relative;
+
+    }
+
+    main .hero-image .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 4vw;
+    }
+
+    main .hero-image .text h6 {
+        font-weight: 400;
+    }
+
+    main .hero-image .text h5 {
+        font-weight: 500;
+    }
+
+    main .hero-image .text hr {
+        border: none;
+        background-color: #4C6796;
+        height: 2px;
+        width: 10%;
+        border-radius: 2px;
+    }
+
+    main .hero-image img {
+        width: 100%;
+        filter: brightness(50%);
+    }
+
+    main .Subscribe {
+        display: flex;
+        background-color: #4C6796;
+        padding: 10px;
+
+
+    }
+
+    main .Subscribe input {
+        border: none;
+        outline: none;
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px 0 0 3px;
+
+    }
+
+    main .Subscribe button {
+        background-color: tomato;
+        border: none;
+        border-radius: 0 3px 3px 0;
+        padding: 10px;
+    }
+
+    main .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #e6e9ef;
+        margin: 10px;
+        padding: 10px;
+        color: #4C6796;
+        text-align: center;
+        border-radius: 3px;
+    }
+
+    main .about .text {
+        line-height: 1.6rem;
+    }
+
+    main .about .button button {
+        background-color: #4C6796;
+        border: none;
+        border-radius: 3px;
+        padding: 7px 10px;
+        margin: 10px;
+        color: #e6e9ef;
+    }
+
+    footer {
+        background-color: #4C6796;
+        text-align: center;
+        padding: 20px;
+        color: #e6e9ef;
+        line-height: 2rem;
+        font-weight: 500;
+
+    }
+
+    @media (max-width: 480px) {
+
+        body {
+
+            background-color: #f6f6f8;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        header .logo {
+            margin: 5px;
+        }
+
+        header .logo h1 {
+            font-size: 17px;
+        }
+
+        header .links ul {
+            margin: 8px;
+        }
+
+        header .links ul li {
+            margin: 0 15px;
+
+        }
+
+        header .links ul li a {
+            font-size: 14px;
+            margin: 0;
+        }
+
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>DEVmehrab</h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="portfolio-website.html">HOME</a></li>
+                <li><a href="index.html">PROJECT</a></li>
+                <li><a href="index.html">DEV</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- end of header part-->
+
+    <main>
+        <br><br><br>
+        <div class="hero-image">
+            <img src="./img/web.jpg">
+            <div class="text">
+                <h6>Hello there</h6>
+                <hr>
+                <h3>I'am Mehrab Hossain</h3>
+                <h5>web developer</h5>
+            </div>
+        </div>
+
+        <div class="Subscribe">
+            <input type="text" placeholder="user email">
+            <button>Subscribe</button>
+        </div>
+        <div class="about">
+            <h2>About this web</h2>
+            <div class="icon">
+                <img src="https://img.icons8.com/clouds/100/000000/web.png" />
+            </div>
+            <div class="text">
+                <p>This is my first website made with html and css Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Quibusdam hic quasi vel dignissimos dolores qui ipsa sed in harum doloremque impedit iste
+                    obcaecati soluta ex alias, eos, sit.</p>
+            </div>
+            <div class="button"><button>create page</button></div>
+        </div>
+        <div class="about">
+            <h2>Features</h2>
+            <div class="icon">
+                <img src="https://img.icons8.com/dusk/64/000000/web-design.png" />
+            </div>
+            <div class="text">
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Quibusdam hic quasi vel dignissimos dolores qui ipsa sed in harum doloremque impedit iste
+                    obcaecati soluta ex alias, eos, sit.</p>
+            </div>
+            <div class="button"><button>use now</button></div>
+        </div>
+    </main>
+    <footer>
+        <p>Thanks for visiting</p>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-google"></ion-icon>
+    </footer>
+    <!-- Project -->
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
